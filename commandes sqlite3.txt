@@ -1,0 +1,35 @@
+commandes sqlite3
+
+
+ligne de commande :
+lancement de l'interpreteur de commandes : sqlite3
+commandes internes
+.open <base.db> => ouvre une base de donnees
+.quit           => quit le programme sqlite3
+.help           => aide en ligne
+.database       => affiche la database active
+.tables         => liste des tables
+.excel          => export resultat commande suivante dans excel
+.schema <nom table> => donne la structure de la table
+
+commande SQL :
+CREATE DATABASE [IF NOT EXIST] <databaseName> (
+    fieldName   type [PRIMARY KEY] [NOT NULL], 
+    fieldName   type [PRIMARY KEY] [NOT NULL], 
+    ....
+    fieldName   type [PRIMARY KEY] [NOT NULL] );
+)
+types possibles :
+INT
+TEXT
+CHAR(taille)
+REAL
+
+INSERT [OR IGNORE] INTO <databaseName> (liste des champs epares apr  des ',')
+    VALUES (field1, field2, ... fieldN),
+    VALUES (field1, field2, ... fieldN),
+    .....
+    VALUES (field1, field2, ... fieldN);
+
+SELECT fields FROM <databaseName> [WHERE condition];
+    

@@ -1,0 +1,14 @@
+# structure de la base de données
+# signification des variables
+# BASE = <nom> : nom du fichier contenant la base de donnee
+# TABLE = <nom> : une entree par table a définir
+#       sous la definition de la table on doit avoir la definition de ses champs
+# FIELD = <nom>,[KEY,] <type>[,NOT NULL] : definition d'un champ d'une table
+#       KEY : defini ce champ comme clef primaire
+#       <nom> : nom du champ dans la table
+#       <type> : type de variable (INT, TEXT, CHAR(taille), REAL)
+#       <taille> : taille de la donnee pour le type char
+# le fichier doit se terminer par une ligne vide
+
+BASE = test.bd
+
